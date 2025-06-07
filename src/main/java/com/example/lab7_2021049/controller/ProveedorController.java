@@ -2,7 +2,6 @@ package com.example.lab7_2021049.controller;
 
 import com.example.lab7_2021049.entity.Proveedor;
 import com.example.lab7_2021049.service.ProveedorService;
-import com.example.lab7_2021049.service.ProveedorServiceImpl;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
