@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.processing.Pattern;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -16,12 +18,10 @@ public class Proveedor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(max = 100)
+    @Column(name = "razonSocial", nullable = false, length = 100)
     private String razonSocial;
 
-    @NotBlank
-    @Size(max = 100)
+    @Column(name = "nombreComercial", nullable = false, length = 100)
     private String nombreComercial;
 
     @Pattern(regexp = "\\d{11}")
