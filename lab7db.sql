@@ -5,7 +5,7 @@ USE lab7db;
 -- Tabla proveedor
 CREATE TABLE proveedor (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    razon_social VARCHAR(100) NOT NULL,
+    razon_social VARCHAR(100) NOT NULL, 
     nombre_comercial VARCHAR(100) NOT NULL,
     ruc CHAR(11) NOT NULL UNIQUE,
     telefono VARCHAR(20),
