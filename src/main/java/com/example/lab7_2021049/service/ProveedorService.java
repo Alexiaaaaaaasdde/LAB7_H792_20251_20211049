@@ -9,11 +9,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class ProveedorService implements ProveedorService {
+public class ProveedorServiceImpl implements ProveedorService {
 
     private final ProveedorRepository repo;
 
-    public ProveedorService(ProveedorRepository repo) {
+    public ProveedorServiceImpl(ProveedorRepository repo) {
         this.repo = repo;
     }
 
