@@ -24,38 +24,28 @@ public class Proveedor {
     @Column(name = "nombreComercial", nullable = false, length = 100)
     private String nombreComercial;
 
-    @Pattern(regexp = "\\d{11}")
     @Column(unique = true)
     private String ruc;
 
-    @Pattern(regexp = "\\d+")
     private String telefono;
 
-    @Email
     private String correoElectronico;
 
-    @URL
     private String sitioWeb;
 
-    @Size(max = 150)
+    @Column(name = "direccionFisica", length = 150)
     private String direccionFisica;
 
-    @Pattern(regexp = "^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$")
     private String pais;
 
-    @Pattern(regexp = "^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$")
     private String representanteLegal;
 
-    @Pattern(regexp = "\\d+")
     private String dniRepresentanteLegal;
 
-    @Pattern(regexp = "Nacional|Internacional")
     private String tipoProveedor;
 
-    @Pattern(regexp = "Servicios|Productos|Tecnología|Otros")
     private String categoria;
 
-    @DecimalMin("0.0")
     private Double facturacionAnualDolares;
 
     private LocalDateTime fechaRegistro;
